@@ -1,0 +1,272 @@
+﻿{
+    "id": "44dffe6f-fe50-49dd-8c26-dc79ab4a1c93",
+    "campaign": "",
+    "group": "",
+    "sort_index": 0,
+    "cloudID": "ff290a8a27aec15e5a4641206cdc58ad",
+    "cloudOwnerID": "f6ec3b8a-7c5d-41e4-97b0-a5767bd979d0",
+    "lastCloudUpdate": "Fri Nov 20 2020 02:27:44 GMT+1300 (New Zealand Daylight Time)",
+    "level": 0,
+    "callsign": "Fingus",
+    "name": "Fingus",
+    "player_name": "",
+    "status": "Active",
+    "mounted": true,
+    "text_appearance": "",
+    "notes": "",
+    "history": "",
+    "portrait": "",
+    "cloud_portrait": "",
+    "quirk": "",
+    "current_hp": 6,
+    "reserves": [],
+    "orgs": [],
+    "background": "",
+    "mechSkills": [
+        0,
+        0,
+        2,
+        0
+    ],
+    "licenses": [],
+    "skills": [
+        {
+            "id": "sk_stay_cool",
+            "rank": 1
+        },
+        {
+            "id": "sk_hack_or_fix",
+            "rank": 1
+        },
+        {
+            "id": "sk_get_a_hold_of_something",
+            "rank": 1
+        },
+        {
+            "id": "sk_patch",
+            "rank": 1
+        }
+    ],
+    "talents": [
+        {
+            "id": "t_centimane",
+            "rank": 1
+        },
+        {
+            "id": "t_drone_commander",
+            "rank": 1
+        },
+        {
+            "id": "t_leader",
+            "rank": 1
+        }
+    ],
+    "core_bonuses": [],
+    "loadout": {
+        "id": "e1e230dc-1c9b-4a8f-82d6-35bd188d9710",
+        "name": "Primary",
+        "armor": [
+            null
+        ],
+        "weapons": [
+            null,
+            null
+        ],
+        "gear": [
+            null,
+            null,
+            null
+        ],
+        "extendedWeapons": [
+            null
+        ],
+        "extendedGear": [
+            null,
+            null
+        ]
+    },
+    "mechs": [
+        {
+            "id": "97568a5b-7128-48d0-8a76-1fea06eee751",
+            "name": "ThunkShak",
+            "notes": "",
+            "gm_note": "",
+            "portrait": "pre_hacker_pixel.png",
+            "cloud_portrait": null,
+            "frame": "mf_standard_pattern_i_everest",
+            "active": true,
+            "current_structure": 4,
+            "current_hp": 10,
+            "overshield": 0,
+            "current_stress": 4,
+            "current_heat": 0,
+            "current_repairs": 5,
+            "current_overcharge": 0,
+            "current_core_energy": 1,
+            "loadouts": [
+                {
+                    "id": "c4966c78-e9cb-4abb-a018-4c84dc36535c",
+                    "name": "Primary",
+                    "systems": [
+                        {
+                            "id": "ms_turret_drones",
+                            "uses": 3,
+                            "destroyed": false,
+                            "cascading": false
+                        },
+                        {
+                            "id": "ms_type_3_projected_shield",
+                            "uses": 0,
+                            "destroyed": false,
+                            "cascading": false
+                        },
+                        {
+                            "id": "ms_pattern_a_jericho_deployable_cover",
+                            "uses": 0,
+                            "destroyed": false,
+                            "cascading": false
+                        },
+                        {
+                            "id": "ms_eva_module",
+                            "uses": 0,
+                            "destroyed": false,
+                            "cascading": false
+                        }
+                    ],
+                    "integratedSystems": [],
+                    "mounts": [
+                        {
+                            "mount_type": "Main",
+                            "lock": false,
+                            "slots": [
+                                {
+                                    "size": "Main",
+                                    "weapon": {
+                                        "id": "mw_nexus_hunter_killer",
+                                        "uses": 0,
+                                        "destroyed": false,
+                                        "cascading": false,
+                                        "loaded": true,
+                                        "mod": null,
+                                        "customDamageType": null,
+                                        "maxUseOverride": 0
+                                    }
+                                }
+                            ],
+                            "extra": [],
+                            "bonus_effects": []
+                        },
+                        {
+                            "mount_type": "Flex",
+                            "lock": false,
+                            "slots": [
+                                {
+                                    "size": "Flex",
+                                    "weapon": {
+                                        "id": "mw_nexus_hunter_killer",
+                                        "uses": 0,
+                                        "destroyed": false,
+                                        "cascading": false,
+                                        "loaded": true,
+                                        "mod": null,
+                                        "customDamageType": null,
+                                        "maxUseOverride": 0
+                                    }
+                                }
+                            ],
+                            "extra": [
+                                {
+                                    "size": "Auxiliary",
+                                    "weapon": null
+                                }
+                            ],
+                            "bonus_effects": []
+                        },
+                        {
+                            "mount_type": "Heavy",
+                            "lock": false,
+                            "slots": [
+                                {
+                                    "size": "Heavy",
+                                    "weapon": {
+                                        "id": "mw_nexus_hunter_killer",
+                                        "uses": 0,
+                                        "destroyed": false,
+                                        "cascading": false,
+                                        "loaded": true,
+                                        "mod": null,
+                                        "customDamageType": null,
+                                        "maxUseOverride": 0
+                                    }
+                                }
+                            ],
+                            "extra": [],
+                            "bonus_effects": []
+                        }
+                    ],
+                    "integratedMounts": [],
+                    "improved_armament": {
+                        "mount_type": "Flex",
+                        "lock": false,
+                        "slots": [
+                            {
+                                "size": "Flex",
+                                "weapon": null
+                            }
+                        ],
+                        "extra": [
+                            {
+                                "size": "Auxiliary",
+                                "weapon": null
+                            }
+                        ],
+                        "bonus_effects": []
+                    },
+                    "integratedWeapon": {
+                        "mount_type": "Aux",
+                        "lock": false,
+                        "slots": [
+                            {
+                                "size": "Auxiliary",
+                                "weapon": null
+                            }
+                        ],
+                        "extra": [],
+                        "bonus_effects": []
+                    }
+                }
+            ],
+            "active_loadout_index": 0,
+            "statuses": [],
+            "conditions": [],
+            "resistances": [],
+            "reactions": [],
+            "burn": 0,
+            "ejected": false,
+            "destroyed": false,
+            "defeat": "",
+            "activations": 1,
+            "meltdown_imminent": false,
+            "reactor_destroyed": false,
+            "cc_ver": "ERR",
+            "state": {
+                "stage": "Downtime",
+                "turn": 1,
+                "move": 0,
+                "actions": 2,
+                "overwatch": false,
+                "braced": false,
+                "overcharged": false,
+                "prepare": false,
+                "bracedCooldown": false,
+                "redundant": false,
+                "history": []
+            }
+        }
+    ],
+    "active_mech": "97568a5b-7128-48d0-8a76-1fea06eee751",
+    "cc_ver": "",
+    "counter_data": [],
+    "custom_counters": [],
+    "brews": []
+}

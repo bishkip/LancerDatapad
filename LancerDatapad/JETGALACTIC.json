@@ -1,0 +1,500 @@
+{
+    "id": "fb819802-ae92-492b-ac18-d410e402afeb",
+    "campaign": "",
+    "group": "Current",
+    "sort_index": 0,
+    "cloudID": "6e44d8384a364290007670232016279e",
+    "cloudOwnerID": "f6ec3b8a-7c5d-41e4-97b0-a5767bd979d0",
+    "lastCloudUpdate": "Thu Nov 19 2020 23:05:37 GMT+1300 (New Zealand Daylight Time)",
+    "level": 3,
+    "callsign": "Jet Galactic",
+    "name": "John Drysdale",
+    "player_name": "---",
+    "status": "ACTIVE",
+    "mounted": true,
+    "text_appearance": "",
+    "notes": "",
+    "history": "",
+    "portrait": "",
+    "cloud_portrait": "",
+    "quirk": "",
+    "current_hp": 7,
+    "reserves": [],
+    "orgs": [],
+    "background": "Bounty Hunter",
+    "mechSkills": [ 0, 5, 0, 0 ],
+    "licenses": [
+        {
+            "id": "mf_monarch",
+            "rank": 3
+        }
+    ],
+    "skills": [
+        {
+            "id": "sk_blow_something_up",
+            "rank": 1
+        },
+        {
+            "id": "sk_hack_or_fix",
+            "rank": 2
+        },
+        {
+            "id": "sk_word_on_the_street",
+            "rank": 1
+        },
+        {
+            "id": "sk_show_off",
+            "rank": 1
+        },
+        {
+            "id": "Space Sax",
+            "rank": 2,
+            "custom": true,
+            "custom_desc": "",
+            "custom_detail": ""
+        }
+    ],
+    "talents": [
+        {
+            "id": "t_stormbringer",
+            "rank": 3
+        },
+        {
+            "id": "t_ace",
+            "rank": 3
+        }
+    ],
+    "core_bonuses": [ "cb_all_theater_movement_suite" ],
+    "loadout": {
+        "id": "1772c553-c537-4597-a1db-d052c0825ab2",
+        "name": "Primary",
+        "armor": [
+            {
+                "id": "pg_mobility_hardsuit",
+                "destroyed": false,
+                "uses": 0,
+                "cascading": false,
+                "customDamageType": null
+            }
+        ],
+        "weapons": [
+            {
+                "id": "pg_heavy_signature",
+                "destroyed": false,
+                "uses": 0,
+                "cascading": false,
+                "customDamageType": null
+            },
+            {
+                "id": "pg_light_signature",
+                "destroyed": false,
+                "uses": 0,
+                "cascading": false,
+                "customDamageType": null
+            }
+        ],
+        "gear": [
+            {
+                "id": "pg_thermite_charge",
+                "destroyed": false,
+                "uses": 0,
+                "cascading": false,
+                "customDamageType": null
+            },
+            {
+                "id": "pg_antiphoton_visor",
+                "destroyed": false,
+                "uses": 0,
+                "cascading": false,
+                "customDamageType": null
+            },
+            {
+                "id": "pg_dataplating",
+                "destroyed": false,
+                "uses": 0,
+                "cascading": false,
+                "customDamageType": null
+            }
+        ],
+        "extendedWeapons": [ null ],
+        "extendedGear": [ null, null ]
+    },
+    "mechs": [
+        {
+            "id": "19fd157b-84e6-4f9e-9ac3-94f8e0270c26",
+            "name": "Texas Red",
+            "notes": "",
+            "gm_note": "",
+            "portrait": "",
+            "cloud_portrait": "",
+            "frame": "mf_standard_pattern_i_everest",
+            "active": false,
+            "current_structure": 4,
+            "current_hp": 14,
+            "overshield": 0,
+            "current_stress": 4,
+            "current_heat": 0,
+            "current_repairs": 5,
+            "current_overcharge": 0,
+            "current_core_energy": 1,
+            "loadouts": [
+                {
+                    "id": "be9d7868-5253-4871-99e5-5e37f5df344b",
+                    "name": "Primary",
+                    "systems": [
+                        {
+                            "id": "ms_custom_paint_job",
+                            "uses": 0,
+                            "destroyed": false,
+                            "cascading": false
+                        },
+                        {
+                            "id": "ms_type_i_flight_system",
+                            "uses": 0,
+                            "destroyed": false,
+                            "cascading": false
+                        },
+                        {
+                            "id": "ms_turret_drones",
+                            "uses": 3,
+                            "destroyed": false,
+                            "cascading": false
+                        },
+                        {
+                            "id": "ms_personalizations",
+                            "uses": 0,
+                            "destroyed": false,
+                            "cascading": false
+                        }
+                    ],
+                    "integratedSystems": [],
+                    "mounts": [
+                        {
+                            "mount_type": "Main",
+                            "lock": false,
+                            "slots": [
+                                {
+                                    "size": "Main",
+                                    "weapon": {
+                                        "id": "mw_rocket_propelled_grenade",
+                                        "uses": 0,
+                                        "destroyed": false,
+                                        "cascading": false,
+                                        "loaded": true,
+                                        "mod": null,
+                                        "customDamageType": null,
+                                        "maxUseOverride": 0
+                                    }
+                                }
+                            ],
+                            "extra": [],
+                            "bonus_effects": []
+                        },
+                        {
+                            "mount_type": "Flex",
+                            "lock": false,
+                            "slots": [
+                                {
+                                    "size": "Flex",
+                                    "weapon": {
+                                        "id": "mw_missile_rack",
+                                        "uses": 0,
+                                        "destroyed": false,
+                                        "cascading": false,
+                                        "loaded": true,
+                                        "mod": null,
+                                        "customDamageType": null,
+                                        "maxUseOverride": 0
+                                    }
+                                }
+                            ],
+                            "extra": [
+                                {
+                                    "size": "Auxiliary",
+                                    "weapon": {
+                                        "id": "mw_missile_rack",
+                                        "uses": 0,
+                                        "destroyed": false,
+                                        "cascading": false,
+                                        "loaded": true,
+                                        "mod": null,
+                                        "customDamageType": null,
+                                        "maxUseOverride": 0
+                                    }
+                                }
+                            ],
+                            "bonus_effects": []
+                        },
+                        {
+                            "mount_type": "Heavy",
+                            "lock": false,
+                            "slots": [
+                                {
+                                    "size": "Heavy",
+                                    "weapon": {
+                                        "id": "mw_sharanga_missiles",
+                                        "uses": 0,
+                                        "destroyed": false,
+                                        "cascading": false,
+                                        "loaded": true,
+                                        "mod": null,
+                                        "customDamageType": null,
+                                        "maxUseOverride": 0
+                                    }
+                                }
+                            ],
+                            "extra": [],
+                            "bonus_effects": []
+                        }
+                    ],
+                    "integratedMounts": [],
+                    "improved_armament": {
+                        "mount_type": "Flex",
+                        "lock": false,
+                        "slots": [
+                            {
+                                "size": "Flex",
+                                "weapon": null
+                            }
+                        ],
+                        "extra": [
+                            {
+                                "size": "Auxiliary",
+                                "weapon": null
+                            }
+                        ],
+                        "bonus_effects": []
+                    },
+                    "integratedWeapon": {
+                        "mount_type": "Aux",
+                        "lock": false,
+                        "slots": [
+                            {
+                                "size": "Auxiliary",
+                                "weapon": null
+                            }
+                        ],
+                        "extra": [],
+                        "bonus_effects": []
+                    }
+                }
+            ],
+            "active_loadout_index": 0,
+            "statuses": [],
+            "conditions": [],
+            "resistances": [],
+            "reactions": [],
+            "burn": 0,
+            "ejected": false,
+            "destroyed": false,
+            "defeat": "",
+            "activations": 1,
+            "meltdown_imminent": false,
+            "reactor_destroyed": false,
+            "cc_ver": "ERR",
+            "state": {
+                "stage": "Downtime",
+                "turn": 1,
+                "move": 0,
+                "actions": 2,
+                "overwatch": false,
+                "braced": false,
+                "overcharged": false,
+                "prepare": false,
+                "bracedCooldown": false,
+                "redundant": false,
+                "history": []
+            }
+        },
+        {
+            "id": "a5cd0f4e-e862-4193-9372-97a195fdc667",
+            "name": "Hibiscus Blues",
+            "notes": "",
+            "gm_note": "",
+            "portrait": "",
+            "cloud_portrait": "https://i.imgur.com/a1n5ABn.jpg",
+            "frame": "mf_monarch",
+            "active": true,
+            "current_structure": 4,
+            "current_hp": 10,
+            "overshield": 0,
+            "current_stress": 4,
+            "current_heat": 0,
+            "current_repairs": 3,
+            "current_overcharge": 0,
+            "current_core_energy": 1,
+            "loadouts": [
+                {
+                    "id": "1d18e608-a3ec-4739-8448-d51867acbc33",
+                    "name": "Primary",
+                    "systems": [
+                        {
+                            "id": "ms_tlaloc_class_nhp",
+                            "uses": 0,
+                            "destroyed": false,
+                            "cascading": false
+                        },
+                        {
+                            "id": "ms_turret_drones",
+                            "uses": 3,
+                            "destroyed": false,
+                            "cascading": false
+                        },
+                        {
+                            "id": "ms_custom_paint_job",
+                            "uses": 0,
+                            "destroyed": false,
+                            "cascading": false
+                        }
+                    ],
+                    "integratedSystems": [],
+                    "mounts": [
+                        {
+                            "mount_type": "Flex",
+                            "lock": false,
+                            "slots": [
+                                {
+                                    "size": "Flex",
+                                    "weapon": {
+                                        "id": "mw_missile_rack",
+                                        "uses": 0,
+                                        "destroyed": false,
+                                        "cascading": false,
+                                        "loaded": true,
+                                        "mod": null,
+                                        "customDamageType": null,
+                                        "maxUseOverride": 0
+                                    }
+                                }
+                            ],
+                            "extra": [
+                                {
+                                    "size": "Auxiliary",
+                                    "weapon": {
+                                        "id": "mw_missile_rack",
+                                        "uses": 0,
+                                        "destroyed": false,
+                                        "cascading": false,
+                                        "loaded": true,
+                                        "mod": null,
+                                        "customDamageType": null,
+                                        "maxUseOverride": 0
+                                    }
+                                }
+                            ],
+                            "bonus_effects": []
+                        },
+                        {
+                            "mount_type": "Main",
+                            "lock": false,
+                            "slots": [
+                                {
+                                    "size": "Main",
+                                    "weapon": {
+                                        "id": "mw_rocket_propelled_grenade",
+                                        "uses": 0,
+                                        "destroyed": false,
+                                        "cascading": false,
+                                        "loaded": true,
+                                        "mod": null,
+                                        "customDamageType": null,
+                                        "maxUseOverride": 0
+                                    }
+                                }
+                            ],
+                            "extra": [],
+                            "bonus_effects": []
+                        },
+                        {
+                            "mount_type": "Heavy",
+                            "lock": false,
+                            "slots": [
+                                {
+                                    "size": "Heavy",
+                                    "weapon": {
+                                        "id": "mw_gandiva_missiles",
+                                        "uses": 0,
+                                        "destroyed": false,
+                                        "cascading": false,
+                                        "loaded": true,
+                                        "mod": null,
+                                        "customDamageType": null,
+                                        "maxUseOverride": 0
+                                    }
+                                }
+                            ],
+                            "extra": [],
+                            "bonus_effects": []
+                        }
+                    ],
+                    "integratedMounts": [],
+                    "improved_armament": {
+                        "mount_type": "Flex",
+                        "lock": false,
+                        "slots": [
+                            {
+                                "size": "Flex",
+                                "weapon": null
+                            }
+                        ],
+                        "extra": [
+                            {
+                                "size": "Auxiliary",
+                                "weapon": null
+                            }
+                        ],
+                        "bonus_effects": []
+                    },
+                    "integratedWeapon": {
+                        "mount_type": "Aux",
+                        "lock": false,
+                        "slots": [
+                            {
+                                "size": "Auxiliary",
+                                "weapon": null
+                            }
+                        ],
+                        "extra": [],
+                        "bonus_effects": []
+                    }
+                }
+            ],
+            "active_loadout_index": 0,
+            "statuses": [],
+            "conditions": [],
+            "resistances": [],
+            "reactions": [],
+            "burn": 0,
+            "ejected": false,
+            "destroyed": false,
+            "defeat": "",
+            "activations": 1,
+            "meltdown_imminent": false,
+            "reactor_destroyed": false,
+            "cc_ver": "ERR",
+            "state": {
+                "stage": "Downtime",
+                "turn": 1,
+                "move": 0,
+                "actions": 2,
+                "overwatch": false,
+                "braced": false,
+                "overcharged": false,
+                "prepare": false,
+                "bracedCooldown": false,
+                "redundant": false,
+                "history": []
+            }
+        }
+    ],
+    "active_mech": "a5cd0f4e-e862-4193-9372-97a195fdc667",
+    "cc_ver": "",
+    "counter_data": [
+        {
+            "id": "ctr_stormbringer",
+            "val": 6
+        }
+    ],
+    "custom_counters": [],
+    "brews": []
+}
