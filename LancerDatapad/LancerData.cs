@@ -4,6 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Diagnostics;
+using System.IO;
 using System.Linq;
 using System.Net.Http;
 using System.Net.Http.Headers;
@@ -29,15 +30,25 @@ namespace LancerDatapad
             _client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("token", "e9822ae1436214d469a9de3d02114f85d52a2002");
         }
 
-        public async Task<Content> GetContent(string id)
+        //Get from API
+        public async Task<Content> GetApiContent(string id)
         {
             string path = pathPrefix + id;
-            var json = await GetJSONAsync(path);
-            return ReadContent(json);
+            var json = await GetApiJsonAsync(path);
+            if (json == null) return null;
+            var parsedJson = ParseJsonToRawContent(json);
+            if (json == null) return null;
+            return GetContentFromJson(parsedJson);
+        }
+
+        public Content GetLocalContent(string path)
+        {
+            var json = GetJsonFromEmbededContent(path);
+            return GetContentFromJson(json);
         }
 
         //Get JSON from API
-        public async Task<string> GetJSONAsync(string url)
+        public async Task<string> GetApiJsonAsync(string url)
         {
             string content;
 
@@ -67,14 +78,19 @@ namespace LancerDatapad
             return content;
         }
 
-        //Get Rates from JSON
-        public Content ReadContent(string rawJson)
+        //Remove Json around the pilot content
+        public string ParseJsonToRawContent(string rawJson)
         {
-            Content contentData = null;
+            return (string)JObject.Parse(rawJson)["files"]["pilot.txt"]["content"];
+        }
+
+        //Convert content json to Content class
+        public Content GetContentFromJson(string rawJson)
+        {
+            Content contentData;
             try
             {
-                var parsedJson = (string)JObject.Parse(rawJson)["files"]["pilot.txt"]["content"];
-                contentData = JsonConvert.DeserializeObject<Content>(parsedJson, new JsonSerializerSettings { NullValueHandling = NullValueHandling.Ignore });
+                contentData = JsonConvert.DeserializeObject<Content>(rawJson, new JsonSerializerSettings { NullValueHandling = NullValueHandling.Ignore });
                 Debug.WriteLine("DATA READ OKAY");
             }
             catch (Exception ex)
@@ -84,9 +100,22 @@ namespace LancerDatapad
             }
             return contentData;
         }
+
+        //Read from file
+        public string GetJsonFromEmbededContent(string resourceName)
+        {
+            var assembly = Assembly.GetExecutingAssembly();
+            string result;
+
+            using (Stream stream = assembly.GetManifestResourceStream(resourceName))
+            using (StreamReader reader = new StreamReader(stream))
+            {
+                result = reader.ReadToEnd();
+            }
+            return result;
+        }
     }
 
-    // Root myDeserializedClass = JsonConvert.DeserializeObject<Root>(myJsonResponse);
     public class License
     {
         public string id { get; set; }
