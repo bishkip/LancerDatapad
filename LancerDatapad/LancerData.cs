@@ -27,7 +27,7 @@ namespace LancerDatapad
             _client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("*/*"));
             _client.DefaultRequestHeaders.Referrer = new Uri("https://compcon.app/");
             _client.DefaultRequestHeaders.UserAgent.TryParseAdd("Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36");
-            _client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("token", "e9822ae1436214d469a9de3d02114f85d52a2002");
+            _client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("token", "d36ae780843ff944606f3344c6d179b4615974e3");
         }
 
         //Get from API

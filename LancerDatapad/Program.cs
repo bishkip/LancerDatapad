@@ -25,14 +25,14 @@ namespace LancerDatapad
         {
             //Console setup
             Console.ForegroundColor = ConsoleColor.Green;
-            Console.SetWindowSize(50, 35);
+            Console.SetWindowSize(70, 50);
             Console.Clear();
             Console.WriteLine("Enter cloud id");
             string id = Console.ReadLine();
             Console.Clear();
 
 
-            id = id != "" ? id : "ff290a8a27aec15e5a4641206cdc58ad";
+            id = id != "" ? id : "76d9eb5305d76911d26563668a8af3ae";
             id = id != " " ? id : "6e44d8384a364290007670232016279e";
             LancerData ld = new LancerData();
             await ConsoleDisplay(ld, id);
@@ -47,51 +47,63 @@ namespace LancerDatapad
                 Debug.WriteLine("API CONTENT NULL");
                 content = ld.GetLocalContent("LancerDatapad.JETGALACTIC.json");
             }
+
             if (content == null)
             {
                 Debug.WriteLine("LOCAL CONTENT NULL");
                 return;
             }
 
-            Console.WriteLine($"\n---------------------------------------------\n");
-            Console.WriteLine($"Callsign: \n\t{content.callsign} \n" +
-                              $"Name: \n\t{content.name}");
-            Console.WriteLine($"\n---------------------------------------------\n");
+            Console.WriteLine($"\n-------------------------------------------------------------\n");
+            Console.WriteLine($"\tName: \n\t\t\t{content.name}");
+            Console.WriteLine($"\tCallsign: \n\t\t\t{content.callsign}");
+            Console.WriteLine($"\tSkills:");
+            foreach (var skill in content.skills)
+            {
+                Console.WriteLine($"\t\t\t{skill.id}: {skill.rank}");
+            }
+            Console.WriteLine($"\tTalents:");
+            foreach (var talent in content.talents)
+            {
+                Console.WriteLine($"\t\t\t{talent.id}: {talent.rank}");
+            }
+            Console.WriteLine($"\n-------------------------------------------------------------\n");
 
             //Mech
             Mech mech = content.mechs.Where(p => p.active == true).FirstOrDefault() ?? content.mechs.FirstOrDefault();
             if (mech == null) return;
 
-            Console.WriteLine($"Name: \n\t{mech.name} \n" +
-                              $"Frame: \n\t{mech.frame}");
-            Console.WriteLine($"\n---------------------------------------------\n");
-
+            Console.WriteLine($"\tName: \n\t\t\t{mech.name}");
+            Console.WriteLine($"\tFrame: \n\t\t\t{mech.frame}");
+            Console.WriteLine($"\tCore Bonuses:");
+            foreach (var core_bonus in content.core_bonuses)
+            {
+                Console.WriteLine($"\t\t\t{core_bonus}");
+            }
             //Mech Loadout
             Loadout2 loadout = mech.loadouts.FirstOrDefault();
             if (loadout == null) return;
-            Console.WriteLine($"Systems:");
+            Console.WriteLine($"\tSystems:");
             foreach (var system in loadout.systems)
             {
-                Console.WriteLine($"\t{system.id}");
+                Console.WriteLine($"\t\t\t{system.id}");
             }
-            Console.WriteLine($"\n---------------------------------------------\n");
-
-            Console.WriteLine($"Weapons:");
+            Console.WriteLine($"\tWeapons:");
             foreach (var mount in loadout.mounts)
             {
-                Console.WriteLine($"\t{mount.mount_type}:");
+                Console.WriteLine($"\t\t{mount.mount_type}:");
                 foreach (var slot in mount.slots)
                 {
                     if (slot.weapon != null)
-                        Console.WriteLine($"\t\t{slot.weapon.id}");
+                        Console.WriteLine($"\t\t\t{slot.weapon.id}");
                 }
                 foreach (var extra in mount.extra)
                 {
                     if (extra.weapon != null)
-                        Console.WriteLine($"\t\t{extra.weapon.id}");
+                        Console.WriteLine($"\t\t\t{extra.weapon.id}");
                 }
             }
-            Console.WriteLine($"\n---------------------------------------------\n");
+            Console.WriteLine($"\n-------------------------------------------------------------\n");
             Console.ReadKey();
         }
     }
